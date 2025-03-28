@@ -21,4 +21,15 @@ public class PhotoService {
         Photo[] photos = restTemplate.getForObject(url, Photo[].class);
         return Arrays.asList(photos);
     }
+
+    public Photo getPhotoById(int id) {
+        String url = "https://jsonplaceholder.typicode.com/photos/"+id;
+        return restTemplate.getForObject(url, Photo.class);
+    }
+
+
+//    public Todo getTodoById(int id) {
+//        String url = "https://jsonplaceholder.typicode.com/todos/" + id;
+//        return restTemplate.getForObject(url, Todo.class);
+//    }
 }
