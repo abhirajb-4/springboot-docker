@@ -28,8 +28,5 @@ public class PhotoService {
     }
 
 
-//    public Todo getTodoById(int id) {
-//        String url = "https://jsonplaceholder.typicode.com/todos/" + id;
-//        return restTemplate.getForObject(url, Todo.class);
-//    }
+
 }
